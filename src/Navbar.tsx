@@ -1,36 +1,34 @@
-// ...existing code...
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-gray-900 text-gray-200 shadow-lg">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center py-3">
 
           {/* Left: Logo */}
-          <a href="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <img
               src="/Favicon.jpeg"
               alt="Home"
-              className="h-10 w-10 object-cover rounded-full"
+              className="h-10 w-10 object-cover rounded-full border border-gray-700"
             />
-            <span className="text-xl font-semibold text-gray-800 hidden md:block">
-              Portfolio
-            </span>
-          </a>
+            <span className="text-xl font-semibold">Portfolio</span>
+          </Link>
 
-          {/* Mobile menu toggle */}
+          {/* Mobile Menu Toggle */}
           <div className="md:hidden">
             <button
               onClick={() => setOpen(!open)}
               aria-expanded={open}
               aria-label="Toggle menu"
-              className="text-gray-700 focus:outline-none"
+              className="text-gray-300 focus:outline-none"
               type="button"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {open ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (
@@ -42,17 +40,36 @@ const Navbar: React.FC = () => {
 
           {/* Right: Links */}
           <ul
-            className={`flex-col md:flex md:flex-row md:flex-grow md:justify-end md:gap-10
-            ${open ? 'block' : 'hidden'} md:block`}
+            className={`
+              flex-col md:flex md:flex-row md:flex-grow md:justify-end md:gap-10
+              ${open ? 'flex' : 'hidden'} md:flex
+            `}
           >
             <li>
-              <a href="/about" className="block px-3 py-2 text-gray-700 hover:text-blue-600">About</a>
+              <Link
+                to="/about"
+                className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-md transition"
+              >
+                About
+              </Link>
             </li>
+
             <li>
-              <a href="/projects" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Projects</a>
+              <Link
+                to="/projects"
+                className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-md transition"
+              >
+                Projects
+              </Link>
             </li>
+
             <li>
-              <a href="/contact" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Contact</a>
+              <Link
+                to="/contact"
+                className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-md transition"
+              >
+                Contact
+              </Link>
             </li>
           </ul>
 
@@ -63,4 +80,3 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
-// ...existing code...
