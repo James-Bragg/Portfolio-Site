@@ -1,0 +1,127 @@
+import React from 'react';
+
+const projects = [
+	{
+		title: 'DnD Companion',
+		description:
+			'Manage campaigns, characters and assets with an opinionated, responsive UI.',
+		tech: ['React', 'TypeScript', 'Tailwind'],
+		repo: 'https://github.com/James-Bragg/dnd-companion',
+		demo: '#',
+	},
+	{
+		title: 'Portfolio Engine',
+		description:
+			'Lightweight static site generator for showcasing projects with MDX support.',
+		tech: ['Next.js', 'Tailwind', 'Vercel'],
+		repo: 'https://github.com/James-Bragg/portfolio-engine',
+		demo: '#',
+	},
+	{
+		title: 'Data Worker',
+		description:
+			'Small Python service for ETL and CSV processing with simple REST API.',
+		tech: ['Python', 'FastAPI', 'Docker'],
+		repo: 'https://github.com/James-Bragg/data-worker',
+		demo: '#',
+	},
+];
+
+const Projects: React.FC = () => {
+	return (
+		<main className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-gray-100 py-12">
+			<div className="max-w-5xl mx-auto px-6">
+				<div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-gray-900/60 via-gray-800/40 to-gray-900/60 border border-gray-800 p-8 shadow-2xl">
+					<svg
+						className="pointer-events-none absolute -right-28 -top-28 opacity-10"
+						width="420"
+						height="420"
+						viewBox="0 0 420 420"
+						fill="none"
+						aria-hidden
+					>
+						<defs>
+							<linearGradient id="projectsGrad" x1="0" x2="1">
+								<stop offset="0" stopColor="#06b6d4" />
+								<stop offset="1" stopColor="#7c3aed" />
+							</linearGradient>
+						</defs>
+						<circle
+							cx="210"
+							cy="210"
+							r="200"
+							stroke="url(#projectsGrad)"
+							strokeWidth="2"
+						/>
+					</svg>
+
+					<header className="mb-8">
+						<h1 className="text-3xl font-extrabold text-cyan-200">
+							Projects
+						</h1>
+						<p className="text-gray-300 mt-2">
+							Selected work — focused on frontend, tooling and small backend
+							services.
+						</p>
+					</header>
+
+					<section className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+						{projects.map((p) => (
+							<article
+								key={p.title}
+								className="group relative bg-gray-900 border border-gray-800 p-5 rounded-lg shadow hover:shadow-xl transition"
+							>
+								<div className="flex items-start justify-between gap-4">
+									<div>
+										<h3 className="text-lg font-semibold text-gray-100">
+											{p.title}
+										</h3>
+										<p className="text-sm text-gray-300 mt-2">
+											{p.description}
+										</p>
+
+										<div className="mt-3 flex flex-wrap gap-2">
+											{p.tech.map((t) => (
+												<span
+													key={t}
+													className="text-xs px-2 py-1 rounded-full bg-gray-800/60 text-gray-200"
+												>
+													{t}
+												</span>
+											))}
+										</div>
+									</div>
+
+									<div className="flex flex-col items-end gap-2">
+										<a
+											href={p.demo}
+											className="text-xs px-3 py-1 rounded-md bg-cyan-500 hover:bg-cyan-600 text-black font-medium transition"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											Demo
+										</a>
+										<a
+											href={p.repo}
+											className="text-xs px-3 py-1 rounded-md bg-transparent border border-gray-700 hover:bg-gray-800 text-gray-200 transition"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											Repo
+										</a>
+									</div>
+								</div>
+
+								<div className="mt-4 text-xs text-gray-400">
+									Role: Full-stack · Year: 2024
+								</div>
+							</article>
+						))}
+					</section>
+				</div>
+			</div>
+		</main>
+	);
+};
+
+export default Projects;

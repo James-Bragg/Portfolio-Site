@@ -1,42 +1,86 @@
 import React from 'react';
 
 const Home: React.FC = () => {
-    return (
-        <>
-            {/* INTRODUCTION */}
-            <div className="Introduction text-left mt-20 space-y-6">
-                <h1>Welcome to My Portfolio</h1>
-                <h1 className="nowrap">
-                    My name is <span className="text-cyan-500 font-bold text-3xl">James Bragg</span> I am an aspiring software developer
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-gray-100 py-12">
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-gray-900/60 via-gray-800/40 to-gray-900/60 border border-gray-800 p-8 shadow-2xl">
+          <svg className="pointer-events-none absolute -right-28 -top-28 opacity-10" width="420" height="420" viewBox="0 0 420 420" fill="none" aria-hidden>
+            <defs>
+              <linearGradient id="g2" x1="0" x2="1">
+                <stop offset="0" stopColor="#06b6d4" />
+                <stop offset="1" stopColor="#7c3aed" />
+              </linearGradient>
+            </defs>
+            <circle cx="210" cy="210" r="200" stroke="url(#g2)" strokeWidth="2" />
+          </svg>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <section className="md:col-span-2 space-y-6">
+              <div className="prose prose-invert max-w-none">
+                <h1 className="text-4xl font-extrabold text-cyan-200 leading-tight">
+                  Hi, I’m <span className="text-cyan-400">James Bragg</span>
                 </h1>
-            </div>
-
-            {/* DESCRIPTION + IMAGE ROW */}
-            <div className="Picture flex flex-col md:flex-row items-start gap-8 mt-10 mb-20">
-
-                {/* DESCRIPTION BOX */}
-                <div className="Description border border-gray-700 bg-gray-700 p-6 rounded-lg text-white flex-1">
-                <p> <span className="text-cyan-500 font-bold text-3xl">Greetings!</span> I am a dedicated and passionate software developer with a strong foundation in computer science and a deep interest in building innovative applications. 
-                    My journey into coding began during my school years, where I quickly developed a love for problem-solving and creating efficient, elegant solutions. 
-                </p> 
-                <p className="mt-4"> Over the following years, I continued to refine my skills through college and university, earning a First-Class BSc in Computer Science from the University of Bedfordshire. 
-                    During this time, I gained hands-on experience with a wide range of programming languages, tools, and frameworks, 
-                    further strengthening both my technical abilities and my passion for software development. 
+                <p className="text-gray-300 text-lg leading-relaxed">
+                  I build polished, accessible interfaces and reliable backend services. I focus on performance,
+                  developer ergonomics and shipping features that solve real problems.
                 </p>
+              </div>
+
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="/projects"
+                  className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-black px-4 py-2 rounded-md font-medium shadow"
+                >
+                  View projects
+                </a>
+                <a
+                  href="/about"
+                  className="inline-flex items-center gap-2 bg-transparent border border-gray-700 hover:bg-gray-800 px-4 py-2 rounded-md text-gray-200"
+                >
+                  About me
+                </a>
+                <a
+                  href="mailto:jamesbragg01@outlook.com"
+                  className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-md text-gray-200"
+                >
+                  Contact
+                </a>
+              </div>
+
+              <div className="mt-4 grid sm:grid-cols-2 gap-4">
+                <div className="p-4 rounded-lg bg-gray-900 border border-gray-800 shadow">
+                  <h4 className="text-cyan-300 font-semibold">Quick snapshot</h4>
+                  <p className="text-sm text-gray-300 mt-2">Frontend & backend developer — React, TypeScript, Tailwind, Python.</p>
                 </div>
 
-                {/* IMAGE — pushed far right */}
-                <div className="md:ml-auto">
-                    <img
-                        src="/Favicon.jpeg"
-                        alt="Jb Picture"
-                        className="w-80 h-100 object-cover border border-gray-700 rounded-lg"
-                    />
+                <div className="p-4 rounded-lg bg-gray-900 border border-gray-800 shadow">
+                  <h4 className="text-cyan-300 font-semibold">Highlights</h4>
+                  <ul className="text-sm text-gray-300 mt-2 space-y-1">
+                    <li>Responsive React apps with strong accessibility focus.</li>
+                    <li>Small backend services & integrations in Python/Django.</li>
+                  </ul>
                 </div>
+              </div>
+            </section>
 
-            </div>
-        </>
-    );
+            <aside className="md:col-span-1 flex flex-col items-center text-center">
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-cyan-500 shadow-lg transform transition hover:scale-[1.03]">
+                <img src="/Favicon.jpeg" alt="James Bragg" className="w-full h-full object-cover" />
+              </div>
+
+              <div className="mt-4 w-full bg-gray-850/10 border border-gray-800 rounded-lg p-3 text-left">
+                <h3 className="text-xs text-gray-300 uppercase tracking-wide">Contact</h3>
+                <p className="mt-2 text-sm text-gray-300">Email: <a href="mailto:jamesbragg01@outlook.com" className="text-cyan-300">jamesbragg01@outlook.com</a></p>
+              </div>
+            </aside>
+          </div>
+
+          <div className="mt-8 text-sm text-gray-400">Want to see more? Browse projects or read more about my work and experience.</div>
+        </div>
+      </div>
+    </main>
+  );
 };
 
 export default Home;
