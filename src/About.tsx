@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
   return (
@@ -32,12 +33,12 @@ const About: React.FC = () => {
                 >
                   Email
                 </a>
-                <a
-                  href="/projects"
+                <Link
+                  to="/projects"
                   className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-200 px-3 py-2 rounded-full text-sm font-medium"
                 >
                   Projects
-                </a>
+                </Link>
               </div>
 
               <div className="mt-6 w-full bg-gray-850/30 border border-gray-800 rounded-lg p-3 text-left">

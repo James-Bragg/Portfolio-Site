@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const Contact: React.FC = () => {
   return (
@@ -73,15 +74,15 @@ const Contact: React.FC = () => {
                 </li>
 
                 <li>
-                  <a
-                    href="/projects"
+                  <Link
+                    to="/projects"
                     className="flex items-center gap-3 bg-gray-800 hover:bg-gray-700 px-4 py-3 rounded-md transition"
                   >
                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" aria-hidden>
                       <path d="M12 2l3 6 6 .5-4.5 3.8L18 22l-6-3.5L6 22l1.5-9.7L3 8.5 9 8z" stroke="currentColor" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     <span className="font-medium">Projects</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
 

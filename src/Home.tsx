@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const Home: React.FC = () => {
   return (
@@ -28,18 +29,15 @@ const Home: React.FC = () => {
               </div>
 
               <div className="flex flex-wrap gap-3">
-                <a
-                  href="/projects"
-                  className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-black px-4 py-2 rounded-md font-medium shadow"
-                >
-                  View projects
-                </a>
-                <a
-                  href="/about"
+                <Link to="/projects" className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-black px-4 py-2 rounded-md font-medium shadow">
+                View projects
+                </Link>
+                <Link
+                  to="/about"
                   className="inline-flex items-center gap-2 bg-transparent border border-gray-700 hover:bg-gray-800 px-4 py-2 rounded-md text-gray-200"
                 >
                   About me
-                </a>
+                </Link>
                 <a
                   href="mailto:jamesbragg01@outlook.com"
                   className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-md text-gray-200"
