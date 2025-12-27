@@ -4,24 +4,24 @@ const projects = [
 	{
 		title: 'DnD Companion',
 		description:
-			'Manage campaigns, characters and assets with an opinionated, responsive UI.',
-		tech: ['React', 'TypeScript', 'Tailwind'],
-		repo: 'https://github.com/James-Bragg/dnd-companion',
+			'Manage Combat Encounters with the built in Initiative Tracker. As well as saving Users and initiative bonuses.',
+		tech: ['HTML', 'CSS', 'JavaScript', 'Git'],
+		repo: '',
 		demo: '#',
 	},
 	{
-		title: 'Portfolio Engine',
+		title: 'My Dissertation project.',
 		description:
-			'Lightweight static site generator for showcasing projects with MDX support.',
-		tech: ['Next.js', 'Tailwind', 'Vercel'],
-		repo: 'https://github.com/James-Bragg/portfolio-engine',
+			'A Forum/Social media platform built to allow student collaboration across universities to allow for greater developed of social skills and collaboration.',
+		tech: ['HTML', 'CSS', 'JAVAScript', 'Python', 'Django', 'AWS', 'SQL', 'Git'],
+		repo: '',
 		demo: '#',
 	},
 	{
-		title: 'Data Worker',
+		title: 'This Portfolio Site',
 		description:
-			'Small Python service for ETL and CSV processing with simple REST API.',
-		tech: ['Python', 'FastAPI', 'Docker'],
+			'A personal portfolio website to showcase my projects and skills as a software developer.',
+		tech: ['REACT', 'TAILWIND', 'TypeScript', 'VITE', 'Git', 'GitHub-Pages'],
 		repo: 'https://github.com/James-Bragg/data-worker',
 		demo: '#',
 	},

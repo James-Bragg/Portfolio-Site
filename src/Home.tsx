@@ -51,14 +51,15 @@ const Home: React.FC = () => {
               <div className="mt-4 grid sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-lg bg-gray-900 border border-gray-800 shadow">
                   <h4 className="text-cyan-300 font-semibold">Quick snapshot</h4>
-                  <p className="text-sm text-gray-300 mt-2">Frontend & backend developer — React, TypeScript, Tailwind, Python.</p>
+                  <p className="text-sm text-gray-300 mt-2">Software Engineer with 1<sup>st</sup> class Bsc in Computer Science from the University of Bedfordshire.
+                  </p>
                 </div>
 
                 <div className="p-4 rounded-lg bg-gray-900 border border-gray-800 shadow">
                   <h4 className="text-cyan-300 font-semibold">Highlights</h4>
                   <ul className="text-sm text-gray-300 mt-2 space-y-1">
-                    <li>Responsive React apps with strong accessibility focus.</li>
-                    <li>Small backend services & integrations in Python/Django.</li>
+                    <li>Using Frameworks such as React and Django.</li>
+                    <li>Building Projects using a wide range of technologies. For example, Python, SQL, AWS,</li>
                   </ul>
                 </div>
               </div>

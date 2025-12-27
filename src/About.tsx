@@ -44,9 +44,9 @@ const About: React.FC = () => {
               <div className="mt-6 w-full bg-gray-850/30 border border-gray-800 rounded-lg p-3 text-left">
                 <h3 className="text-xs text-gray-300 uppercase tracking-wide">Quick info</h3>
                 <ul className="mt-2 text-sm text-gray-300 space-y-1">
-                  <li><strong className="text-gray-100">Location:</strong> UK</li>
+                  <li><strong className="text-gray-100">Location:</strong> UK, County of Northamptonshire</li>
                   <li><strong className="text-gray-100">Availability:</strong> Open to opportunities</li>
-                  <li><strong className="text-gray-100">Stack:</strong> React · TypeScript · Tailwind · Python</li>
+                  <li><strong className="text-gray-100">Travel:</strong> Willing to travel. Full UK driving license Available</li>
                 </ul>
               </div>
             </aside>
@@ -65,25 +65,15 @@ const About: React.FC = () => {
                 <div className="p-4 rounded-lg bg-gray-900 border border-gray-800 shadow transition hover:shadow-lg">
                   <h4 className="font-semibold text-cyan-300">Technical Skills</h4>
                   <div className="mt-3 flex flex-wrap gap-2">
-                    {['React', 'TypeScript', 'Tailwind', 'Node.js', 'Python', 'Django', 'Git', 'REST'].map(skill => (
+                    {['React', 'JavaScript', 'Tailwind', 'SQL', 'Python', 'Django', 'Git', 'GitHub', 'REST', 'AWS'].map(skill => (
                       <span key={skill} className="px-3 py-1 bg-gray-800/60 text-sm rounded-full text-gray-200">{skill}</span>
                     ))}
                   </div>
                 </div>
 
                 <div className="p-4 rounded-lg bg-gray-900 border border-gray-800 shadow transition hover:shadow-lg">
-                  <h4 className="font-semibold text-cyan-300">Highlights</h4>
-                  <ul className="mt-3 space-y-2 text-gray-300 text-sm">
-                    <li>Built responsive React apps with TypeScript and Tailwind.</li>
-                    <li>Designed small backend services in Python/Django for data processing.</li>
-                    <li>Experience collaborating with designers to improve handoff and accessibility.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="mt-2 p-4 rounded-lg bg-gradient-to-r from-gray-900/40 to-gray-800/30 border border-gray-800">
-                <h4 className="font-semibold text-cyan-300 mb-3">Experience</h4>
-                <ol className="relative border-l border-gray-800 ml-2 pl-4 space-y-6 text-sm text-gray-300">
+                  <h4 className="font-semibold text-cyan-300">Experience</h4>
+                  <ol className="relative border-l border-gray-800 ml-2 pl-4 space-y-6 text-sm text-gray-300">
                   <li className="relative">
                     <span className="absolute -left-6 top-0 inline-flex items-center justify-center w-3 h-3 rounded-full bg-cyan-400 ring-2 ring-gray-900"></span>
                     <div className="font-semibold text-gray-100">BSc (Hons) Computer Science — 1st Class</div>
@@ -93,6 +83,23 @@ const About: React.FC = () => {
                     <span className="absolute -left-6 top-0 inline-flex items-center justify-center w-3 h-3 rounded-full bg-cyan-400 ring-2 ring-gray-900"></span>
                     <div className="font-semibold text-gray-100">Personal Project — DnD Companion App</div>
                     <div className="text-xs text-gray-400">Frontend app to manage campaigns and assets for players</div>
+                  </li>
+                </ol>
+                </div>
+              </div>
+
+              <div className="mt-2 p-4 rounded-lg bg-gradient-to-r from-gray-900/40 to-gray-800/30 border border-gray-800">
+                <h4 className="font-semibold text-cyan-300 mb-3">Outside of the Software Industry</h4>
+                <ol className="relative border-l border-gray-800 ml-2 pl-4 space-y-6 text-sm text-gray-300">
+                  <li className="relative">
+                    <span className="absolute -left-6 top-0 inline-flex items-center justify-center w-3 h-3 rounded-full bg-cyan-400 ring-2 ring-gray-900"></span>
+                    <div className="font-semibold text-gray-100">Exploring Technologies</div>
+                    <div className="text-xs text-gray-400">I like to keep up with new tech trends and experiment with emerging tools. Weather it be Hardware, or software in nature.</div>
+                  </li>
+                  <li className="relative">
+                    <span className="absolute -left-6 top-0 inline-flex items-center justify-center w-3 h-3 rounded-full bg-cyan-400 ring-2 ring-gray-900"></span>
+                    <div className="font-semibold text-gray-100">Entertainment</div>
+                    <div className="text-xs text-gray-400">I enjoy watching movies, playing games both digital and table top, as well as keeping social with friends and family.</div>
                   </li>
                 </ol>
               </div>
