@@ -6,7 +6,7 @@ const projects = [
 		description:
 			'Manage Combat Encounters with the built in Initiative Tracker. As well as saving Users and initiative bonuses.',
 		tech: ['HTML', 'CSS', 'JavaScript', 'Git'],
-		repo: '',
+		repo: 'https://james-bragg.github.io/DnD-Initiative-Tracker/',
 		demo: '#',
 	},
 	{

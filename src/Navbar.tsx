@@ -12,8 +12,7 @@ const Navbar: React.FC = () => {
           {/* Left: Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img
-              src="/Favicon.jpeg"
-              alt="Home"
+              src="/Portfolio-Site/Favicon.jpeg" alt="Profile"
               className="h-10 w-10 object-cover rounded-full border border-gray-700"
             />
             <span className="text-xl font-semibold">Portfolio</span>
@@ -22,11 +21,11 @@ const Navbar: React.FC = () => {
           {/* Mobile Menu Toggle */}
           <div className="md:hidden">
             <button
-              onClick={() => setOpen(!open)}
-              aria-expanded={open}
-              aria-label="Toggle menu"
-              className="text-gray-300 focus:outline-none"
-              type="button"
+            onClick={() => setOpen(prev => !prev)}
+            aria-expanded={open ? "true" : "false"}
+            aria-label="Toggle menu"
+            className="text-gray-300 focus:outline-none"
+            type="button"
             >
               <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {open ? (
