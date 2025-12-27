@@ -6,8 +6,8 @@ const projects = [
 		description:
 			'Manage Combat Encounters with the built in Initiative Tracker. As well as saving Users and initiative bonuses.',
 		tech: ['HTML', 'CSS', 'JavaScript', 'Git'],
-		repo: 'https://james-bragg.github.io/DnD-Initiative-Tracker/',
-		demo: '#',
+		repo: 'https://github.com/James-Bragg/Portfolio-Site',
+		demo: 'https://james-bragg.github.io/DnD-Initiative-Tracker/',
 	},
 	{
 		title: 'My Dissertation project.',
@@ -22,8 +22,8 @@ const projects = [
 		description:
 			'A personal portfolio website to showcase my projects and skills as a software developer.',
 		tech: ['REACT', 'TAILWIND', 'TypeScript', 'VITE', 'Git', 'GitHub-Pages'],
-		repo: 'https://github.com/James-Bragg/data-worker',
-		demo: '#',
+		repo: 'https://github.com/James-Bragg/DnD-Initiative-Tracker',
+		demo: 'https://github.com/James-Bragg/data-worker',
 	},
 ];
 
