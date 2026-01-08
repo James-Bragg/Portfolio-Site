@@ -14,7 +14,7 @@ const projects = [
 		description:
 			'A Forum/Social media platform built to allow student collaboration across universities to allow for greater developed of social skills and collaboration.',
 		tech: ['HTML', 'CSS', 'JAVAScript', 'Python', 'Django', 'AWS', 'SQL', 'Git'],
-		repo: '',
+		repo: 'https://github.com/James-Bragg/StudentSocialWeb',
 		demo: '#',
 	},
 	{
