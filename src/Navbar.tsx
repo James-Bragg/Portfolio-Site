@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
           {/* Left: Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img
-              src="/Portfolio-Site/Favicon.jpeg" alt="Profile"
+              src="/Portfolio/Favicon.jpeg" alt="Profile"
               className="h-10 w-10 object-cover rounded-full border border-gray-700"
             />
             <span className="text-xl font-semibold">Portfolio</span>
