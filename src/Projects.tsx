@@ -22,8 +22,8 @@ const projects = [
 		description:
 			'A personal portfolio website to showcase my projects and skills as a software developer.',
 		tech: ['REACT', 'TAILWIND', 'TypeScript', 'VITE', 'Git', 'GitHub-Pages'],
-		repo: 'https://github.com/James-Bragg/Portfolio-Site',
-		demo: 'https://james-bragg.github.io/Portfolio-Site/#/projects',
+		repo: 'https://github.com/James-Bragg/Portfolio',
+		demo: 'https://james-bragg.github.io/Portfolio/#/projects',
 	},
 ];
 
